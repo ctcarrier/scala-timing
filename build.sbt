@@ -20,21 +20,21 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime",
   "ch.qos.logback" % "logback-core" % "0.9.28" % "runtime",
   //AKKA
-  "se.scalablesolutions.akka" % "akka-actor" % "1.3-RC1",
-  "se.scalablesolutions.akka" % "akka-http" % "1.3-RC1",
-  "se.scalablesolutions.akka" % "akka-testkit" % "1.3-RC1",
-  "se.scalablesolutions.akka" % "akka-slf4j" % "1.3-RC1",
+  "se.scalablesolutions.akka" % "akka-actor" % "1.3-RC1" withSources(),
+  "se.scalablesolutions.akka" % "akka-http" % "1.3-RC1" withSources(),
+  "se.scalablesolutions.akka" % "akka-testkit" % "1.3-RC1" withSources(),
+  "se.scalablesolutions.akka" % "akka-slf4j" % "1.3-RC1" withSources(),
   //LIFT-JSON
-  "net.liftweb" % "lift-json-ext_2.9.0-1" % "2.4-M2",
-  "net.liftweb" % "lift-json_2.9.0-1" % "2.4-M2",
+  "net.liftweb" % "lift-json-ext_2.9.0-1" % "2.4-M2" withSources(),
+  "net.liftweb" % "lift-json_2.9.0-1" % "2.4-M2" withSources(),
   //CASBAH
   "com.mongodb.casbah" % "casbah_2.9.0-1" % "2.1.5.0",
-  "com.novus" % "salat-core_2.9.0-1" % "0.0.8-SNAPSHOT",
+  "com.novus" % "salat-core_2.9.0-1" % "0.0.8-SNAPSHOT" withSources(),
   //TESTING
-  "org.specs2" %% "specs2" % "1.5" % "test",
-  "org.specs2" % "specs2-scalaz-core_2.9.0-1" % "6.0.RC2" % "test",
+  "org.specs2" %% "specs2" % "1.5" % "test" withSources(),
+  "org.specs2" % "specs2-scalaz-core_2.9.0-1" % "6.0.RC2" % "test" withSources(),
   // Dispatch
-  "net.databinder" %% "dispatch-http" % "0.8.6"
+  "net.databinder" %% "dispatch-http" % "0.8.6" withSources()
 )
 
 resolvers ++= Seq(
